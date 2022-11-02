@@ -61,20 +61,28 @@ console.log(pets);
 // Challenge 14
 const numbers = [23, 45, 0 , 2, 8, 44, 100, 1, 3, 91, 34]
 
-const addTwo = (num) => {
-    for (let i = 0; i < num.length; i++) {
-        const newNumber = num[i];
-        newNumber + 2
-    }
+// const addTwo = (num) => {
+//     for (let i = 0; i < num.length; i++) {
+//       console.log(num[i])
+//         const newNumber = num[i];
+//         let arrNumber = newNumber + 2
+      
+        
+//         console.log('***adding 2 is', arrNumber);
+//     }
 
-}
+// }
+//       console.log(addTwo(numbers))
+
+// numbers.forEach(addTwo());
     
 
-    numbers.forEach((_num) => {
-        console.log(numbers);
-    })
+numbers.forEach(function (num) {
+    for (let i = 0; i < num.length; i++) {
+        const newNumber = num[i];
+        let arrNumber = newNumber + 2
+    }
+});
 
-console.log(numbers);
-
-
+console.log(numbers)
 
